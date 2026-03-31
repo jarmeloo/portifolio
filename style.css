@@ -200,20 +200,18 @@ section {
     z-index: 2;
 }
 
-/* =========================================
-   ADAPTAÇÕES DE RESPONSIVIDADE (MEDIA QUERIES)
-   ========================================= */
+/* ADAPTAÇÕES DE RESPONSIVIDADE (MEDIA QUERIES)
 
-/* Para Tablets e Telas Médias (até 1024px) */
+/* Tablets e Telas Médias (até 1024px) */
 @media screen and (max-width: 1024px) {
     .card {
-        width: 48%; /* Muda de 3 cards por linha para 2 */
+        width: 48%; 
         margin-bottom: 20px;
         gap: 2%;
     }
     
     .divImagens img {
-        width: 49%; /* Muda de 4 imagens por linha para 2 */
+        width: 49%; 
         margin-bottom: 8px;
     }
 
@@ -238,23 +236,23 @@ h4{
 /* Para Celulares (até 768px) */
 @media screen and (max-width: 768px) {
     
-    /* Mantém a logo de um lado e os links do outro */
     header {
-        padding: 4%; 
+        padding: 4%;
+        
     }
 
-    /* Reduz levemente os espaços do menu para caber no celular sem quebrar a linha */
     header ul {
         gap: 12px;
         padding: 12px 15px;
-        font-size: 14px; 
+        font-size: 14px;
+        margin-top: 3%; 
     }
 
     .logo {
-        width: 45px; /* Logo sutilmente menor para dar espaço ao menu */
+        width: 45px;
+        margin-top: 3%; 
     }
 
-    /* Botões na vertical para facilitar o toque no celular */
     .conteudoPrincipal .divBotoes {
         flex-direction: column;
         width: 100%;
@@ -267,9 +265,11 @@ h4{
     }
 
     .tituloSecao {
-        font-size: 10vw;
+        font-size: 15vw;
         text-align: center;
+        
     }
+    
 
     .divCards {
         margin: 40px 0px 60px;
@@ -277,18 +277,21 @@ h4{
     }
 
     .card {
-        width: 100%; /* 1 card por linha */
+        width: 100%;
     }
 
     .divImagens {
         gap: 15px 0;
+
+
     }
 
     .divImagens img {
-        width: 50%; /* 1 imagem por linha */
+        width: 50%;
     }
 
     h4 {
-        font-size: 6vw; /* Mantém a leitura amigável do rodapé */
+        font-size: 6vw;
+        margin-bottom: 10%;
     }
 }
