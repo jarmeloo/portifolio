@@ -199,3 +199,96 @@ section {
 .tituloSecao, .divCards{
     z-index: 2;
 }
+
+/* =========================================
+   ADAPTAÇÕES DE RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================= */
+
+/* Para Tablets e Telas Médias (até 1024px) */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 48%; /* Muda de 3 cards por linha para 2 */
+        margin-bottom: 20px;
+        gap: 2%;
+    }
+    
+    .divImagens img {
+        width: 49%; /* Muda de 4 imagens por linha para 2 */
+        margin-bottom: 8px;
+    }
+
+    .tituloSecao {
+        font-size: 7vw; 
+    }
+}
+
+.nomeFim {
+    width: 100%;
+    overflow: hidden;
+}
+
+h4{
+    font-size: 2vw;
+    font-weight: 500;
+    opacity: .5;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Para Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Mantém a logo de um lado e os links do outro */
+    header {
+        padding: 4%; 
+    }
+
+    /* Reduz levemente os espaços do menu para caber no celular sem quebrar a linha */
+    header ul {
+        gap: 12px;
+        padding: 12px 15px;
+        font-size: 14px; 
+    }
+
+    .logo {
+        width: 45px; /* Logo sutilmente menor para dar espaço ao menu */
+    }
+
+    /* Botões na vertical para facilitar o toque no celular */
+    .conteudoPrincipal .divBotoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .botaoPrimario, .botaoSecundario {
+        width: 100%; 
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .tituloSecao {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .divCards {
+        margin: 40px 0px 60px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; /* 1 card por linha */
+    }
+
+    .divImagens {
+        gap: 15px 0;
+    }
+
+    .divImagens img {
+        width: 100%; /* 1 imagem por linha */
+    }
+
+    h4 {
+        font-size: 6vw; /* Mantém a leitura amigável do rodapé */
+    }
+}
