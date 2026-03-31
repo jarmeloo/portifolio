@@ -285,7 +285,7 @@ h4{
     }
 
     .divImagens img {
-        width: 100%; /* 1 imagem por linha */
+        width: 50%; /* 1 imagem por linha */
     }
 
     h4 {
