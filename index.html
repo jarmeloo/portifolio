@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br, en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="assets/logo.svg" alt="logo do site" />
+      <nav>
+        <ul>
+          <li><a href="#inicio">Home</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção 1 -->
+    <section class="secao1" id="inicio">
+      <h2>Portifólio</h2>
+      <div class="conteudoPrincipal">
+        <h1>Johann Jarmelo</h1>
+        <p>Desenvolvedor Web</p>
+        <div class="divBotoes">
+          <button class="botaoPrimario" onclick="abrirLinkedin()">
+            Linkedin 
+            <img src="assets/seta_botao.svg" alt="seta ir para pagina" />
+          </button>
+          <button class="botaoSecundario" onclick="abrirLinkedinContato()">
+            Entre em contato
+        </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2 -->
+     <section class="secao2" id="habilidades">
+        <h2 class="tituloSecao">Habilidades</h2>
+        <div class="divCards">
+            <div class="card branco">
+                <img src="assets/icone1.svg" alt="icone1">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites e aplicações modernas, com foco em 
+                  performance, responsividade e boas práticas de desenvolvimento.</p>
+            </div>
+            <div class="card">
+                <img src="assets/icone2.svg" alt="icone2">
+                <h3>HTML, CSS & JavaScript</h3>
+                <p>Construção de interfaces interativas utilizando as principais tecnologias do 
+                  front-end, garantindo estrutura, estilo e dinamismo.</p>
+            </div>
+            <div class="card branco">
+                <img src="assets/icone3.svg" alt="icone3">
+                <h3>Python</h3>
+                <p>Desenvolvimento de aplicações e automação de tarefas, scripts, 
+                  soluções práticas, explorando a versatilidade da linguagem.</p>
+            </div>
+            <div class="card">
+                <img src="assets/icone4.svg" alt="icone4">
+                <h3>Java</h3>
+                <p>Conhecimento em programação orientada a objetos e 
+                  desenvolvimento de aplicações estruturadas e escaláveis.</p>
+            </div>
+            <div class="card branco">
+                <img src="assets/icone5.svg" alt="icone5">
+                <h3>UI/UX Design</h3>
+                <p>Criação de interfaces de usuário e experiências de usuário, 
+                  focando em usabilidade, estética e acessibilidade.</p>
+            </div>
+            <div class="card">
+                <img src="assets/icone6.svg" alt="icone6">
+                <h3>Versionamento com Git</h3>
+                <p>Controle e organização de código utilizando Git e GitHub, 
+                  facilitando colaboração e evolução dos projetos.</p>
+            </div>
+        </div>
+        <!-- seçao trabalhos -->
+        <h2 class="tituloSecao" id="trabalhos">Trabalhos</h2>
+        <p>Uma seleção dos projetos que desenvolvi, aplicando na prática 
+          meus conhecimentos em tecnologia, design e boas práticas de desenvolvimento.</p>
+        <div class="divImagens">
+            <img src="assets/img1.webp" alt="card1" onclick="abrirProjeto('https://github.com/jarmeloo/dashboard-data-e-analytics?tab=readme-ov-file')">
+            <img src="assets/img2.webp" alt="card2" onclick="abrirProjeto('https://githttps://github.com/jarmeloo/sorteador-filmes-e-series/blob/main/README.md')">
+            <img src="assets/img3.webp" alt="card3" onclick="abrirProjeto('https://github.com/jarmeloo/dashboard-data-e-analytics/blob/main/README.md')">
+            <img src="assets/em_breve.webp" alt="card4" onclick="abrirProjeto('link4')">
+            <img src="assets/em_breve.webp" alt="card5" onclick="abrirProjeto('link5')">
+            <img src="assets/em_breve.webp" alt="card6" onclick="abrirProjeto('link6')">
+            <img src="assets/em_breve.webp" alt="card7" onclick="abrirProjeto('link7')">
+            <img src="assets/em_breve.webp" alt="card8" onclick="abrirProjeto('link8')">
+        </div>
+
+        <div class="noomeFim">
+          <h4>Johann Jarmelo</h4>
+        </div>
+     </section>
+     <script src="main.js"></script>
+  </body>
+</html>
